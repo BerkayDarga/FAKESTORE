@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../FAKESTORE/fakestore.css">
+</head>
+
+<body>
+
+    <h3 class="general-title">My Products</h3>
+
+    <div class="dropdown">
+        <button class="arrangement-button">Arrangement</button>
+        <div class="dropdown-content">
+            <ul>
+                <li> <a href="">From cheap to expensive</a></li>
+                </li> <a href="">From expensive to cheap</a></li>
+                </li><a href="">Most rated ones</a></li>
+                </li><a href="">Those who get the least rate</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <button onclick="filterButton()" class="filtration-button">filtration</button>
+
+    <div class="container">
+
+
+            <div class="filtration-field">
+                <input id="minPrice" placeholder="price-min-range" type="number">
+                <input id="PriceMax" placeholder="price-max-range" type="number">
+                <input id="minRate" placeholder="rate-min-range" type="number">
+                <input id="maxRate" placeholder="rate-max-range" type="number">
+            </div>
+
+
+        <div class="category-block">
+            <h3>Category</h3>
+            <dl>
+                <dt><input name=" " value="men's clothing" id="men's clothing" type="radio"
+                        onclick="filterByCategory(this)">Men's Clothing</dt><br>
+                <dt><input name=" " value="women's clothing" id="Women's Clothings" type="radio"
+                        onclick="filterByCategory(this)">Women's Clothings</dt><br>
+                <dt><input name=" " value="electronics" id="electronics" type="radio"
+                        onclick="filterByCategory(this)">Electronics</dt><br>
+                <dt><input name=" " value="jewelery" id="jewelery" type="radio"
+                        onclick="filterByCategory(this)">Jewelery</dt>
+            </dl>
+        </div>
+        <div class="contents">
+
+            <div class="products"></div>
+        </div>
+    </div>
+
+
+    <script src="../FAKESTORE/fakestore.js"></script>
+
+
+
+</body>
+
+</html>
